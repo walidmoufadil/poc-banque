@@ -1,4 +1,9 @@
 package org.example.beneficiaireservice.repository;
 
-public class BeneficiaireRepository {
+import org.example.beneficiaireservice.entity.Beneficiaire;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface BeneficiaireRepository extends JpaRepository<Beneficiaire ,Long> {
 }
