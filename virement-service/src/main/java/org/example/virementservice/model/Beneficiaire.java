@@ -1,5 +1,16 @@
 package org.example.virementservice.model;
 
-public class Beneficiaire {
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Beneficiaire {
+    private Long id;
+    private String nom;
+    private String prenom;
+    private String rib;
+    private String type;
 }
